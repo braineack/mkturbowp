@@ -1,16 +1,16 @@
 <template>
-  <div class="full-width center-content">
-    <img src="static/img/logo.png" >
-    <WelcomeMessage name="World" />
-  </div>
+    <TopNav :tagline="tagline" />
 </template>
 
 <script>
-import WelcomeMessage from 'components/Home/WelcomeMessage'
+import TopNav from 'components/Global/TopNav'
 
 export default {
   components: {
-    WelcomeMessage
-  }
+    TopNav
+  },
+  data: () => ({
+    tagline: 'Make your miata go from Meow to RAWR!'
+  })
 }
 </script>
